@@ -84,13 +84,10 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
               <div className="mb-6">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
                   <span className="bg-gradient-to-r from-accent-600 to-accent-700 dark:from-accent-300 dark:to-accent-500 bg-clip-text text-transparent animate-pulse-slow">4 Sports</span>
                   <span className="block text-3xl md:text-4xl lg:text-5xl mt-2 animate-fade-in text-gray-900 dark:text-white">Elite Training</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-accent-600 dark:text-accent-300 font-semibold mb-2 animate-fade-in" style={{animationDelay: '0.2s'}}>
-                  Pursue Excellence
-                </p>
               </div>
               <div className="mb-6 animate-fade-in" style={{animationDelay: '0.4s'}}>
                 <p className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-3 leading-tight">
@@ -243,8 +240,8 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {achievements.map((achievement, index) => (
-              <div key={index} className="bg-white dark:bg-primary-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-105 border border-primary-100 dark:border-primary-700 group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="bg-gradient-to-br from-accent-500 to-accent-600 p-4 rounded-full w-fit mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+              <div key={index} className="bg-white/30 dark:bg-primary-800/30 backdrop-blur-md p-8 rounded-2xl shadow-sm hover:shadow-md hover:bg-white/40 dark:hover:bg-primary-800/40 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-primary-100/20 dark:border-primary-700/20 group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="bg-gradient-to-br from-accent-500/50 to-accent-600/50 p-4 rounded-full w-fit mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 backdrop-blur-sm">
                   <Trophy className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-primary-900 dark:text-white mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300 text-center">{achievement.title}</h3>
@@ -299,26 +296,26 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {trainingPrograms.map((program, index) => (
-              <div key={program.id} className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-primary-800 dark:to-primary-700 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-105 border border-gray-200 dark:border-primary-600 group animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
+              <div key={program.id} className="bg-gray-50/40 dark:bg-primary-800/30 backdrop-blur-md p-8 rounded-2xl shadow-sm hover:shadow-md hover:bg-gray-50/50 dark:hover:bg-primary-800/40 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-gray-200/20 dark:border-primary-600/20 group animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="mb-6">
-                  <div className="bg-gradient-to-r from-primary-600 to-primary-700 p-3 rounded-lg w-fit mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="bg-gradient-to-r from-primary-600/50 to-primary-700/50 backdrop-blur-sm p-3 rounded-lg w-fit mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Clock className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-primary-900 dark:text-white mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300">{program.title}</h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">{program.description}</p>
                   <div className="flex items-center justify-between text-accent-600 dark:text-accent-400 mb-4">
-                    <div className="flex items-center bg-accent-50 dark:bg-accent-900/20 px-3 py-1 rounded-full">
+                    <div className="flex items-center bg-accent-50/40 dark:bg-accent-900/20 backdrop-blur-sm px-3 py-1 rounded-full">
                       <Clock className="h-4 w-4 mr-2" />
                       <span className="font-semibold text-sm">{program.duration}</span>
                     </div>
-                    <div className="text-lg font-bold text-primary-900 dark:text-white bg-primary-50 dark:bg-primary-900/30 px-4 py-1 rounded-full">{program.price}</div>
+                    <div className="text-lg font-bold text-primary-900 dark:text-white bg-primary-50/40 dark:bg-primary-900/30 backdrop-blur-sm px-4 py-1 rounded-full">{program.price}</div>
                   </div>
                 </div>
                 
                 <ul className="space-y-3 mb-8">
                   {program.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center group-hover:translate-x-2 transition-transform duration-300" style={{transitionDelay: `${featureIndex * 0.1}s`}}>
-                      <div className="w-3 h-3 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></div>
+                      <div className="w-3 h-3 bg-gradient-to-r from-accent-500/50 to-accent-600/50 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></div>
                       <span className="text-gray-700 dark:text-gray-300 font-medium">{feature}</span>
                     </li>
                   ))}

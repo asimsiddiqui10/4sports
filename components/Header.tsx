@@ -35,8 +35,7 @@ export default function Header() {
       <div className="container-max section-padding">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-2xl font-bold text-gray-800 dark:text-white drop-shadow-sm transition-colors duration-300 group">
-            <span className="text-accent-600 dark:text-accent-300 group-hover:text-accent-700 dark:group-hover:text-accent-200 transition-colors duration-300">4 Sports</span>{' '}
-            <span className="group-hover:text-gray-700 dark:group-hover:text-gray-100 transition-colors duration-300">Elite Training</span>
+            <span className="text-accent-600 dark:text-accent-300 group-hover:text-accent-700 dark:group-hover:text-accent-200 transition-colors duration-300">4 Sports</span>
           </Link>
 
           {/* Desktop Navigation */}
