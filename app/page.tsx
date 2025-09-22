@@ -74,7 +74,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white dark:bg-dark-900 transition-colors duration-300">
       {/* Hero Section - Simple gradient */}
       <section className="relative bg-white dark:bg-gradient-to-b dark:from-slate-950 dark:via-primary-950 dark:to-primary-900 text-gray-900 dark:text-white py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-black/10 dark:bg-gradient-to-b dark:from-black/80 dark:via-black/60 dark:to-black/40"></div>
+        <div className="absolute inset-0 bg-black/10 dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/30"></div>
         {/* Animated background elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-accent-500/10 rounded-full animate-float"></div>
         <div className="absolute top-40 right-20 w-16 h-16 bg-accent-400/10 rounded-full animate-bounce-subtle"></div>
@@ -134,7 +134,7 @@ export default function HomePage() {
 
       {/* About Jonathan Section - Matches hero end color */}
       <section id="about" className="py-20 bg-primary-50 dark:bg-primary-900 relative">
-        <div className="absolute inset-0 dark:bg-black/40"></div>
+        <div className="absolute inset-0 dark:bg-black/30"></div>
         <div className="container-max section-padding relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative animate-slide-in-left">
@@ -176,8 +176,8 @@ export default function HomePage() {
       </section>
 
       {/* Mission Statement - Matches hero end color */}
-      <section className="py-16 bg-white dark:bg-primary-900 relative">
-        <div className="absolute inset-0 dark:bg-black/40"></div>
+      <section className="py-16 bg-primary-50 dark:bg-primary-900 relative">
+        <div className="absolute inset-0 dark:bg-black/30"></div>
         <div className="container-max section-padding relative z-10">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-6">
@@ -193,8 +193,8 @@ export default function HomePage() {
       </section>
 
       {/* Infinite Photo Marquee */}
-      <section className="py-12 bg-gray-50 dark:bg-primary-900 relative overflow-hidden">
-        <div className="absolute inset-0 dark:bg-black/40"></div>
+      <section className="py-12 bg-primary-50 dark:bg-primary-900 relative overflow-hidden">
+        <div className="absolute inset-0 dark:bg-black/30"></div>
         <div className="relative">
           <div className="flex animate-marquee-fast space-x-6">
             {/* First set of images */}
@@ -227,7 +227,7 @@ export default function HomePage() {
 
       {/* Achievements Section - Matches hero end color */}
       <section id="achievements" className="py-20 bg-primary-50 dark:bg-primary-900 relative">
-        <div className="absolute inset-0 dark:bg-black/40"></div>
+        <div className="absolute inset-0 dark:bg-black/30"></div>
         <div className="container-max section-padding relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-4">
@@ -240,8 +240,8 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {achievements.map((achievement, index) => (
-              <div key={index} className="bg-white/30 dark:bg-primary-800/30 backdrop-blur-md p-8 rounded-2xl shadow-sm hover:shadow-md hover:bg-white/40 dark:hover:bg-primary-800/40 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-primary-100/20 dark:border-primary-700/20 group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="bg-gradient-to-br from-accent-500/50 to-accent-600/50 p-4 rounded-full w-fit mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 backdrop-blur-sm">
+              <div key={index} className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-white/15 dark:hover:bg-white/8 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-white/10 dark:border-white/10 group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="bg-gradient-to-br from-accent-500/40 to-accent-600/40 backdrop-blur-lg p-4 rounded-full w-fit mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 border border-white/20">
                   <Trophy className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-primary-900 dark:text-white mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300 text-center">{achievement.title}</h3>
@@ -282,8 +282,8 @@ export default function HomePage() {
       </section>
 
       {/* Training Programs Section - Matches hero end color */}
-      <section id="programs" className="py-20 bg-white dark:bg-primary-900 relative">
-        <div className="absolute inset-0 dark:bg-black/40"></div>
+      <section id="programs" className="py-20 bg-primary-50 dark:bg-primary-900 relative">
+        <div className="absolute inset-0 dark:bg-black/30"></div>
         <div className="container-max section-padding relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-4">
@@ -296,26 +296,26 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {trainingPrograms.map((program, index) => (
-              <div key={program.id} className="bg-gray-50/40 dark:bg-primary-800/30 backdrop-blur-md p-8 rounded-2xl shadow-sm hover:shadow-md hover:bg-gray-50/50 dark:hover:bg-primary-800/40 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-gray-200/20 dark:border-primary-600/20 group animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
+              <div key={program.id} className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-white/15 dark:hover:bg-white/8 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-white/10 dark:border-white/10 group animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="mb-6">
-                  <div className="bg-gradient-to-r from-primary-600/50 to-primary-700/50 backdrop-blur-sm p-3 rounded-lg w-fit mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="bg-gradient-to-r from-primary-600/40 to-primary-700/40 backdrop-blur-lg p-3 rounded-lg w-fit mb-4 group-hover:scale-110 transition-transform duration-300 border border-white/20">
                     <Clock className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-primary-900 dark:text-white mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300">{program.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">{program.description}</p>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">{program.description}</p>
                   <div className="flex items-center justify-between text-accent-600 dark:text-accent-400 mb-4">
-                    <div className="flex items-center bg-accent-50/40 dark:bg-accent-900/20 backdrop-blur-sm px-3 py-1 rounded-full">
+                    <div className="flex items-center bg-white/10 dark:bg-white/10 backdrop-blur-lg px-3 py-1 rounded-full border border-white/20">
                       <Clock className="h-4 w-4 mr-2" />
                       <span className="font-semibold text-sm">{program.duration}</span>
                     </div>
-                    <div className="text-lg font-bold text-primary-900 dark:text-white bg-primary-50/40 dark:bg-primary-900/30 backdrop-blur-sm px-4 py-1 rounded-full">{program.price}</div>
+                    <div className="text-lg font-bold text-primary-900 dark:text-white bg-white/10 dark:bg-white/10 backdrop-blur-lg px-4 py-1 rounded-full border border-white/20">{program.price}</div>
                   </div>
                 </div>
                 
                 <ul className="space-y-3 mb-8">
                   {program.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center group-hover:translate-x-2 transition-transform duration-300" style={{transitionDelay: `${featureIndex * 0.1}s`}}>
-                      <div className="w-3 h-3 bg-gradient-to-r from-accent-500/50 to-accent-600/50 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></div>
+                      <div className="w-3 h-3 bg-gradient-to-r from-accent-500/40 to-accent-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-accent-500/20"></div>
                       <span className="text-gray-700 dark:text-gray-300 font-medium">{feature}</span>
                     </li>
                   ))}
@@ -362,7 +362,7 @@ export default function HomePage() {
 
       {/* Call to Action Section - Special gradient like hero */}
       <section className="py-20 bg-gradient-to-br from-primary-100 via-primary-200 to-primary-300 dark:bg-gradient-to-b dark:from-slate-950 dark:via-primary-950 dark:to-primary-900 text-gray-900 dark:text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-white/30 dark:bg-gradient-to-b dark:from-black/80 dark:via-black/60 dark:to-black/40"></div>
+        <div className="absolute inset-0 bg-white/30 dark:bg-black/30"></div>
         {/* Animated background elements */}
         <div className="absolute top-10 right-10 w-24 h-24 bg-accent-500/10 rounded-full animate-float"></div>
         <div className="absolute bottom-20 left-20 w-16 h-16 bg-primary-400/10 rounded-full animate-bounce-subtle"></div>
@@ -410,8 +410,8 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section - Matches hero end color */}
-      <section id="contact" className="py-16 bg-white dark:bg-primary-900 relative">
-        <div className="absolute inset-0 dark:bg-black/40"></div>
+      <section id="contact" className="py-16 bg-primary-50 dark:bg-primary-900 relative">
+        <div className="absolute inset-0 dark:bg-black/30"></div>
         <div className="container-max section-padding text-center animate-fade-in relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-6">
             Start Your Elite Training Journey
