@@ -101,9 +101,9 @@ export default function HomePage() {
                 "Columbus... I am ready to create something special here again. I have learnt and know what it takes to play at the highest level, and I'm ready to share that skillset with this great community."
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{animationDelay: '0.8s'}}>
-                <a href="mailto:asimsiddiqui.you@gmail.com" className="btn-primary text-lg px-8 py-4 group">
+                <Link href="/book" className="btn-primary text-lg px-8 py-4 group">
                   <span className="group-hover:translate-x-1 transition-transform duration-300">Start Your Journey</span>
-                </a>
+                </Link>
                 <Link href="#about" className="btn-secondary text-lg px-8 py-4 group">
                   <span className="group-hover:translate-x-1 transition-transform duration-300">Learn More</span>
                 </Link>
