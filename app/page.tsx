@@ -71,10 +71,10 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="min-h-screen bg-white dark:bg-dark-900 transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-[#050505] transition-colors duration-300">
       {/* Hero Section - Simple gradient */}
-      <section className="relative bg-white dark:bg-gradient-to-b dark:from-slate-950 dark:via-primary-950 dark:to-primary-900 text-gray-900 dark:text-white py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-black/10 dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/30"></div>
+      <section className="relative bg-white dark:bg-gradient-to-b dark:from-black dark:via-[#030303] dark:to-[#050505] text-gray-900 dark:text-white py-24 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/20"></div>
         {/* Animated background elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-accent-500/10 rounded-full animate-float"></div>
         <div className="absolute top-40 right-20 w-16 h-16 bg-accent-400/10 rounded-full animate-bounce-subtle"></div>
@@ -133,8 +133,8 @@ export default function HomePage() {
       </section>
 
       {/* About Jonathan Section - Matches hero end color */}
-      <section id="about" className="py-20 bg-primary-50 dark:bg-primary-900 relative">
-        <div className="absolute inset-0 dark:bg-black/30"></div>
+      <section id="about" className="py-20 bg-white dark:bg-[#050505] relative">
+        <div className="absolute inset-0 dark:bg-black/20"></div>
         <div className="container-max section-padding relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative animate-slide-in-left">
@@ -167,7 +167,7 @@ export default function HomePage() {
                 the next generation with mentorship programs, talent development, and character building. 
                 It's only fitting to give back to the community that played a role in shaping me into who I am today.
               </p>
-              <a href="mailto:asimsiddiqui.you@gmail.com" className="btn-primary group">
+              <a href="mailto:4sportsfoundation@gmail.com" className="btn-primary group">
                 <span className="group-hover:translate-x-1 transition-transform duration-300">Get Started Today</span>
               </a>
             </div>
@@ -176,8 +176,8 @@ export default function HomePage() {
       </section>
 
       {/* Mission Statement - Matches hero end color */}
-      <section className="py-16 bg-primary-50 dark:bg-primary-900 relative">
-        <div className="absolute inset-0 dark:bg-black/30"></div>
+      <section className="py-16 bg-white dark:bg-[#050505] relative">
+        <div className="absolute inset-0 dark:bg-black/20"></div>
         <div className="container-max section-padding relative z-10">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-6">
@@ -193,8 +193,8 @@ export default function HomePage() {
       </section>
 
       {/* Infinite Photo Marquee */}
-      <section className="py-12 bg-primary-50 dark:bg-primary-900 relative overflow-hidden">
-        <div className="absolute inset-0 dark:bg-black/30"></div>
+      <section className="py-12 bg-white dark:bg-[#050505] relative overflow-hidden">
+        <div className="absolute inset-0 dark:bg-black/20"></div>
         <div className="relative">
           <div className="flex animate-marquee-fast space-x-6">
             {/* First set of images */}
@@ -226,8 +226,8 @@ export default function HomePage() {
       </section>
 
       {/* Achievements Section - Matches hero end color */}
-      <section id="achievements" className="py-20 bg-primary-50 dark:bg-primary-900 relative">
-        <div className="absolute inset-0 dark:bg-black/30"></div>
+      <section id="achievements" className="py-20 bg-white dark:bg-[#050505] relative">
+        <div className="absolute inset-0 dark:bg-black/20"></div>
         <div className="container-max section-padding relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-4">
@@ -282,8 +282,8 @@ export default function HomePage() {
       </section>
 
       {/* Training Programs Section - Matches hero end color */}
-      <section id="programs" className="py-20 bg-primary-50 dark:bg-primary-900 relative">
-        <div className="absolute inset-0 dark:bg-black/30"></div>
+      <section id="programs" className="py-20 bg-white dark:bg-[#050505] relative">
+        <div className="absolute inset-0 dark:bg-black/20"></div>
         <div className="container-max section-padding relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-4">
@@ -321,7 +321,10 @@ export default function HomePage() {
                   ))}
                 </ul>
                 
-                <a href="mailto:asimsiddiqui.you@gmail.com" className="btn-primary w-full text-center group">
+                <a 
+                  href={`mailto:4sportsfoundation@gmail.com?subject=Inquiry about ${program.title}&body=Hi Jonathan,%0D%0A%0D%0AI'm interested in the ${program.title} program.%0D%0A%0D%0AProgram Details:%0D%0A- ${program.description}%0D%0A- Duration: ${program.duration}%0D%0A%0D%0AKey Features:%0D%0A${program.features.map(feature => '%0D%0A- ' + feature).join('')}%0D%0A%0D%0APlease let me know the available time slots and pricing details.%0D%0A%0D%0AThank you!`} 
+                  className="btn-primary w-full text-center group"
+                >
                   <span className="group-hover:translate-x-1 transition-transform duration-300">Inquire Now</span>
                 </a>
               </div>
@@ -361,8 +364,8 @@ export default function HomePage() {
       </section>
 
       {/* Call to Action Section - Special gradient like hero */}
-      <section className="py-20 bg-gradient-to-br from-primary-100 via-primary-200 to-primary-300 dark:bg-gradient-to-b dark:from-slate-950 dark:via-primary-950 dark:to-primary-900 text-gray-900 dark:text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-white/30 dark:bg-black/30"></div>
+      <section className="py-20 bg-white dark:bg-gradient-to-b dark:from-black dark:via-[#030303] dark:to-[#050505] text-gray-900 dark:text-white relative overflow-hidden">
+        <div className="absolute inset-0 dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/20"></div>
         {/* Animated background elements */}
         <div className="absolute top-10 right-10 w-24 h-24 bg-accent-500/10 rounded-full animate-float"></div>
         <div className="absolute bottom-20 left-20 w-16 h-16 bg-primary-400/10 rounded-full animate-bounce-subtle"></div>
@@ -383,8 +386,8 @@ export default function HomePage() {
               <div className="space-y-4">
                 <div className="flex items-center group">
                   <Mail className="h-6 w-6 text-accent-600 dark:text-accent-400 mr-3 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
-                  <a href="mailto:asimsiddiqui.you@gmail.com" className="text-accent-700 dark:text-accent-200 hover:text-accent-800 dark:hover:text-accent-100 transition-colors duration-300 group-hover:translate-x-2">
-                    asimsiddiqui.you@gmail.com
+                  <a href="mailto:4sportsfoundation@gmail.com" className="text-accent-700 dark:text-accent-200 hover:text-accent-800 dark:hover:text-accent-100 transition-colors duration-300 group-hover:translate-x-2">
+                    4sportsfoundation@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center group">
@@ -410,8 +413,8 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section - Matches hero end color */}
-      <section id="contact" className="py-16 bg-primary-50 dark:bg-primary-900 relative">
-        <div className="absolute inset-0 dark:bg-black/30"></div>
+      <section id="contact" className="py-16 bg-white dark:bg-[#050505] relative">
+        <div className="absolute inset-0 dark:bg-black/20"></div>
         <div className="container-max section-padding text-center animate-fade-in relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-6">
             Start Your Elite Training Journey
@@ -420,7 +423,7 @@ export default function HomePage() {
             Small groups and private training sessions available. 
             Contact us today to begin your transformation.
           </p>
-          <a href="mailto:asimsiddiqui.you@gmail.com" className="btn-primary text-lg px-8 py-4 group">
+          <a href="mailto:4sportsfoundation@gmail.com" className="btn-primary text-lg px-8 py-4 group">
             <span className="group-hover:translate-x-1 transition-transform duration-300">Send Inquiry</span>
           </a>
         </div>
