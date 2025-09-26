@@ -12,10 +12,10 @@ export default function Header() {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About Jonathan', href: '#about' },
-    { name: 'Achievements', href: '#achievements' },
-    { name: 'Training Programs', href: '#programs' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About Jonathan', href: '/#about' },
+    { name: 'Achievements', href: '/#achievements' },
+    { name: 'Training Programs', href: '/#programs' },
+    { name: 'Contact', href: '/#contact' },
   ]
 
   useEffect(() => {
