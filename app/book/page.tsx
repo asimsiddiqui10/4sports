@@ -7,8 +7,8 @@ export const metadata: Metadata = {
 
 export default function BookingPage() {
   return (
-    <div className="min-h-screen bg-primary-50 dark:bg-primary-900 relative">
-      <div className="absolute inset-0 dark:bg-black/30"></div>
+    <div className="min-h-screen bg-white dark:bg-[#050505] relative">
+      <div className="absolute inset-0 bg-transparent dark:bg-black/20"></div>
       
       {/* Page content */}
       <div className="container-max section-padding relative z-10 py-24">
@@ -25,7 +25,7 @@ export default function BookingPage() {
                   {/* Booking iframe */}
           <div className="bg-white dark:bg-white p-4 rounded-2xl shadow-lg">
             <iframe
-              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ12IioEtDaVVMrnqnKcZQ0yIAQOw8CswA7g3t_c5gpe34hFWdsfeotBJ2-ily5PZap9-sWA9jGQ?gv=true"
+              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0TAu308KJwQ0C7k5ah6T6FNS4TtNqlKTVHkfxHF2Tj7UyGFaaeC2fNVJWxc0GxJuA1xIyGhLO4?gv=true"
               className="w-full h-[800px] rounded-xl"
               frameBorder="0"
               allowFullScreen
@@ -35,18 +35,18 @@ export default function BookingPage() {
 
         {/* Additional Info */}
         <div className="mt-12 grid md:grid-cols-3 gap-8">
-          <div className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-6 rounded-xl border border-white/10 dark:border-white/10">
-            <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">Session Duration</h3>
+          <div className="bg-gray-50 dark:bg-white/5 backdrop-blur-xl p-6 rounded-xl border border-gray-100 dark:border-white/10">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Session Duration</h3>
             <p className="text-gray-600 dark:text-gray-300">Each training session is 60 minutes long, designed to maximize your development.</p>
           </div>
           
-          <div className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-6 rounded-xl border border-white/10 dark:border-white/10">
-            <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">Location</h3>
+          <div className="bg-gray-50 dark:bg-white/5 backdrop-blur-xl p-6 rounded-xl border border-gray-100 dark:border-white/10">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Location</h3>
             <p className="text-gray-600 dark:text-gray-300">All sessions take place at Warner Woods Park, Columbus, OH. Directions will be sent with confirmation.</p>
           </div>
           
-          <div className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-6 rounded-xl border border-white/10 dark:border-white/10">
-            <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">What to Bring</h3>
+          <div className="bg-gray-50 dark:bg-white/5 backdrop-blur-xl p-6 rounded-xl border border-gray-100 dark:border-white/10">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">What to Bring</h3>
             <p className="text-gray-600 dark:text-gray-300">Bring your cleats, water bottle, and determination. All other training equipment will be provided.</p>
           </div>
         </div>

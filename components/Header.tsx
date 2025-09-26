@@ -66,7 +66,7 @@ export default function Header() {
             
             <Link 
               href="/book" 
-              className="bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary-500/30 transform hover:-translate-y-0.5 hover:scale-105 border border-primary-500"
+              className="btn-primary"
             >
               Book Training
             </Link>

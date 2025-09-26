@@ -74,7 +74,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white dark:bg-[#050505] transition-colors duration-300">
       {/* Hero Section - Simple gradient */}
       <section className="relative bg-white dark:bg-gradient-to-b dark:from-black dark:via-[#030303] dark:to-[#050505] text-gray-900 dark:text-white py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/20"></div>
+        <div className="absolute inset-0 bg-transparent dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/20"></div>
         {/* Animated background elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-accent-500/10 rounded-full animate-float"></div>
         <div className="absolute top-40 right-20 w-16 h-16 bg-accent-400/10 rounded-full animate-bounce-subtle"></div>
@@ -140,8 +140,8 @@ export default function HomePage() {
             <div className="relative animate-slide-in-left">
               <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-xl group">
                 <Image
-                  src="/052222_LAFC_002.JPEG"
-                  alt="Jonathan Mensah - Professional Soccer Career"
+                  src="/ronaldo1.jpg"
+                  alt="Professional Soccer Training"
                   fill
                   className="object-cover object-center transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
                 />
@@ -241,7 +241,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {achievements.map((achievement, index) => (
               <div key={index} className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-white/15 dark:hover:bg-white/8 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-white/10 dark:border-white/10 group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="bg-gradient-to-br from-accent-500/40 to-accent-600/40 backdrop-blur-lg p-4 rounded-full w-fit mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 border border-white/20">
+                <div className="bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 p-4 rounded-full w-fit mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-accent-500/30">
                   <Trophy className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-primary-900 dark:text-white mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300 text-center">{achievement.title}</h3>
@@ -352,10 +352,10 @@ export default function HomePage() {
             </div>
             <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl group">
               <Image
-                src="/IMG_0507.JPG"
-                alt="Professional Soccer Coaching"
+                src="/052222_LAFC_002.JPEG"
+                alt="Jonathan Mensah - Professional Soccer Career"
                 fill
-                className="object-cover object-[center_23%] transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
+                className="object-cover object-center transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-600/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
@@ -365,7 +365,7 @@ export default function HomePage() {
 
       {/* Call to Action Section - Special gradient like hero */}
       <section className="py-20 bg-white dark:bg-gradient-to-b dark:from-black dark:via-[#030303] dark:to-[#050505] text-gray-900 dark:text-white relative overflow-hidden">
-        <div className="absolute inset-0 dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/20"></div>
+        <div className="absolute inset-0 bg-transparent dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/20"></div>
         {/* Animated background elements */}
         <div className="absolute top-10 right-10 w-24 h-24 bg-accent-500/10 rounded-full animate-float"></div>
         <div className="absolute bottom-20 left-20 w-16 h-16 bg-primary-400/10 rounded-full animate-bounce-subtle"></div>
