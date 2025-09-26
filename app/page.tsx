@@ -140,7 +140,7 @@ export default function HomePage() {
             <div className="relative animate-slide-in-left">
               <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-xl group">
                 <Image
-                  src="/ronaldo1.jpg"
+                  src="/ronaldo1.JPG"
                   alt="Professional Soccer Training"
                   fill
                   className="object-cover object-center transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"

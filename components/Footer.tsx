@@ -29,8 +29,8 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center group">
                 <Mail className="h-5 w-5 mr-3 text-accent-400 dark:text-accent-300 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
-                <a href="mailto:asimsiddiqui.you@gmail.com" className="text-gray-300 dark:text-gray-400 hover:text-accent-200 dark:hover:text-accent-300 transition-all duration-300 group-hover:translate-x-1">
-                  asimsiddiqui.you@gmail.com
+                <a href="mailto:4sportsfoundation@gmail.com" className="text-gray-300 dark:text-gray-400 hover:text-accent-200 dark:hover:text-accent-300 transition-all duration-300 group-hover:translate-x-1">
+              4sportsfoundation@gmail.com
                 </a>
               </div>
               <div className="flex items-center group">
@@ -62,7 +62,7 @@ export default function Footer() {
                 Achievements
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-accent-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <a href="mailto:asimsiddiqui.you@gmail.com" className="block text-gray-300 dark:text-gray-400 hover:text-white dark:hover:text-gray-200 transition-all duration-300 hover:translate-x-2 relative group">
+              <a href="mailto:4sportsfoundation@gmail.com" className="block text-gray-300 dark:text-gray-400 hover:text-white dark:hover:text-gray-200 transition-all duration-300 hover:translate-x-2 relative group">
                 Contact Us
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-accent-500 transition-all duration-300 group-hover:w-full"></span>
               </a>

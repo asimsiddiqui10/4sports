@@ -1,19 +1,18 @@
-import { Metadata } from 'next'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'Book Training | 4 Sports',
-  description: 'Schedule your training session with Jonathan Mensah - former Columbus Crew Captain and Ghana International.',
-}
+import { useState } from 'react'
 
 export default function BookingPage() {
+  const [isLoading, setIsLoading] = useState(true)
+
   return (
     <div className="min-h-screen bg-white dark:bg-[#050505] relative">
       <div className="absolute inset-0 bg-transparent dark:bg-black/20"></div>
       
       {/* Page content */}
-      <div className="container-max section-padding relative z-10 py-24">
+      <div className="container-max section-padding relative z-10 py-32">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-900 dark:text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Book Your Training Session
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -22,15 +21,24 @@ export default function BookingPage() {
           </p>
         </div>
 
-                  {/* Booking iframe */}
-          <div className="bg-white dark:bg-white p-4 rounded-2xl shadow-lg">
-            <iframe
-              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0TAu308KJwQ0C7k5ah6T6FNS4TtNqlKTVHkfxHF2Tj7UyGFaaeC2fNVJWxc0GxJuA1xIyGhLO4?gv=true"
-              className="w-full h-[800px] rounded-xl"
-              frameBorder="0"
-              allowFullScreen
-              allow="camera *; microphone *"
-            />
+        {/* Booking iframe */}
+        <div className="bg-white dark:bg-white p-4 rounded-2xl shadow-lg relative min-h-[800px]">
+          {isLoading && (
+            <div className="absolute inset-0 flex items-center justify-center bg-white rounded-2xl">
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-10 h-10 border-3 border-accent-500/30 border-t-accent-500 rounded-full animate-spin"></div>
+                <p className="text-gray-500 text-sm font-medium animate-pulse">Loading calendar...</p>
+              </div>
+            </div>
+          )}
+          <iframe
+            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0TAu308KJwQ0C7k5ah6T6FNS4TtNqlKTVHkfxHF2Tj7UyGFaaeC2fNVJWxc0GxJuA1xIyGhLO4?gv=true"
+            className={`w-full h-[800px] rounded-xl transition-opacity duration-300 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
+            frameBorder="0"
+            allowFullScreen
+            allow="camera *; microphone *"
+            onLoad={() => setIsLoading(false)}
+          />
         </div>
 
         {/* Additional Info */}
