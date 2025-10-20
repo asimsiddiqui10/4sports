@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="animate-fade-in">
             <h3 className="text-2xl font-bold mb-4 group">
-              <span className="text-accent-300 dark:text-accent-400 group-hover:text-accent-200 dark:group-hover:text-accent-300 transition-colors duration-300">4 Sports</span>{' '}
+              <span className="text-accent-300 dark:text-accent-400 group-hover:text-accent-200 dark:group-hover:text-accent-300 transition-colors duration-300 font-bison italic font-black uppercase tracking-tighter">4SPORTS</span>{' '}
               <span className="group-hover:text-gray-200 transition-colors duration-300">Elite Training</span>
             </h3>
             <p className="text-gray-300 dark:text-gray-400 mb-4 leading-relaxed">
@@ -72,7 +72,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 dark:border-primary-600 mt-8 pt-8 text-center text-gray-300 dark:text-gray-400 animate-fade-in" style={{animationDelay: '0.6s'}}>
           <p className="hover:text-accent-300 dark:hover:text-accent-400 transition-colors duration-300">
-            &copy; 2024 4 Sports Elite Training. All rights reserved. Founded by Jonathan Mensah.
+            &copy; 2024 <span className="font-bison italic font-black uppercase tracking-tighter">4SPORTS</span> Elite Training. All rights reserved. Founded by Jonathan Mensah.
           </p>
         </div>
       </div>

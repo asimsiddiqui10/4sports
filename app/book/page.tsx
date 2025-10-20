@@ -32,7 +32,7 @@ export default function BookingPage() {
             </div>
           )}
           <iframe
-            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0TAu308KJwQ0C7k5ah6T6FNS4TtNqlKTVHkfxHF2Tj7UyGFaaeC2fNVJWxc0GxJuA1xIyGhLO4?gv=true"
+            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ22ulQTlBVgJZWihgwc735GnXccjA8-GxWZ_JuF2wLfC5KxYaAInVURUv_056u6p__SsbjVqIzI?gv=true"
             className={`w-full h-[800px] rounded-xl transition-opacity duration-300 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
             frameBorder="0"
             allowFullScreen

@@ -72,7 +72,7 @@ A modern, responsive NextJS website for professional soccer training services of
    ```
 
 5. **Open your browser:**
-   Visit [http://localhost:6000](http://localhost:6000)
+   Visit [http://localhost:4000](http://localhost:4000)
 
 ## 🔧 Configuration
 

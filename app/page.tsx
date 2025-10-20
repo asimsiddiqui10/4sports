@@ -10,23 +10,37 @@ export default function HomePage() {
       description: 'Master ball control, first touch, passing accuracy, and advanced technical skills with professional-level instruction.',
       duration: '60 minutes',
       price: 'Contact for pricing',
-      features: ['Ball Control & First Touch', 'Passing & Crossing', 'Shooting Technique', 'Dribbling & Skills']
+      features: [
+        'Comprehensive demonstration from working on first touch to dribbling',
+        'How to pass on the ground and in the air',
+        'How to control a ball on the ground and in the air',
+        'We will encourage you to ask questions, a lot actually',
+        'Understanding spacing on the field (when and how to move into those spaces)',
+        'We will make sure we are doing all these with the players, while incorporating some fun activities'
+      ]
     },
     {
       id: '2',
+      title: 'Mental Training',
+      description: 'Build mental toughness, game intelligence, and decision-making skills essential for elite performance.',
+      duration: '60 minutes',
+      price: 'Contact for pricing',
+      features: [
+        'Know and understand your strengths and weaknesses',
+        'Visualize what you want to do on the field before you get on the field - You are limitless',
+        'Always communicate early and decisive',
+        'Be as simple as you can be',
+        'Do the hard things and hold yourself accountable',
+        'When you improve individually your team improves'
+      ]
+    },
+    {
+      id: '3',
       title: 'Fitness Training',
       description: 'Develop the physical conditioning needed to compete at the highest levels with personalized fitness programs.',
       duration: '60 minutes',
       price: 'Contact for pricing',
       features: ['Speed & Agility', 'Strength Training', 'Endurance Building', 'Injury Prevention']
-    },
-    {
-      id: '3',
-      title: 'Mental Training',
-      description: 'Build mental toughness, game intelligence, and decision-making skills essential for elite performance.',
-      duration: '60 minutes',
-      price: 'Contact for pricing',
-      features: ['Mental Toughness', 'Game Intelligence', 'Pressure Management', 'Leadership Skills']
     },
     {
       id: '4',
@@ -73,19 +87,19 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#050505] transition-colors duration-300">
       {/* Hero Section - Simple gradient */}
-      <section className="relative bg-white dark:bg-gradient-to-b dark:from-black dark:via-[#030303] dark:to-[#050505] text-gray-900 dark:text-white py-24 lg:py-32 overflow-hidden">
+      <section className="relative bg-white dark:bg-gradient-to-b dark:from-black dark:via-[#030303] dark:to-[#050505] text-gray-900 dark:text-white py-24 lg:py-32 overflow-visible">
         <div className="absolute inset-0 bg-transparent dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/20"></div>
         {/* Animated background elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-accent-500/10 rounded-full animate-float"></div>
         <div className="absolute top-40 right-20 w-16 h-16 bg-accent-400/10 rounded-full animate-bounce-subtle"></div>
         <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-primary-400/10 rounded-full animate-pulse-slow"></div>
         
-        <div className="container-max section-padding relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-slide-in-left">
-              <div className="mb-6">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                  <span className="bg-gradient-to-r from-accent-600 to-accent-700 dark:from-accent-300 dark:to-accent-500 bg-clip-text text-transparent animate-pulse-slow">4 Sports</span>
+        <div className="container-max section-padding relative z-10 overflow-visible">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center overflow-visible">
+            <div className="animate-slide-in-left overflow-visible">
+              <div className="mb-6 pl-0 pr-4 overflow-visible">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 overflow-visible">
+                  <span className="text-accent-600 dark:text-accent-300 animate-pulse-slow font-bison italic font-black uppercase tracking-tight">4SPORTS</span>
                   <span className="block text-3xl md:text-4xl lg:text-5xl mt-2 animate-fade-in text-gray-900 dark:text-white">Elite Training</span>
                 </h1>
               </div>
@@ -100,11 +114,11 @@ export default function HomePage() {
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed italic animate-fade-in" style={{animationDelay: '0.6s'}}>
                 "Columbus... I am ready to create something special here again. I have learnt and know what it takes to play at the highest level, and I'm ready to share that skillset with this great community."
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{animationDelay: '0.8s'}}>
-                <Link href="/book" className="btn-primary text-lg px-8 py-4 group">
+              <div className="flex flex-row gap-4 animate-fade-in" style={{animationDelay: '0.8s'}}>
+                <Link href="/book" className="btn-primary text-lg px-4 py-4 group flex-1 text-center">
                   <span className="group-hover:translate-x-1 transition-transform duration-300">Start Your Journey</span>
                 </Link>
-                <Link href="#about" className="btn-secondary text-lg px-8 py-4 group">
+                <Link href="#about" className="btn-secondary text-lg px-4 py-4 group flex-1 text-center">
                   <span className="group-hover:translate-x-1 transition-transform duration-300">Learn More</span>
                 </Link>
               </div>
@@ -359,6 +373,90 @@ export default function HomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-600/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Small Group Sessions Section */}
+      <section className="py-20 bg-white dark:bg-[#050505] relative">
+        <div className="absolute inset-0 dark:bg-black/20"></div>
+        <div className="container-max section-padding relative z-10">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-4">
+              Small Group Sessions
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              Perfect for teams, friend groups, or clubs looking to train together. 4+ players recommended for optimal group dynamics.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-slide-up">
+              <div className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-white/15 dark:hover:bg-white/8 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-white/10 dark:border-white/10 group">
+                <h3 className="text-2xl font-bold text-primary-900 dark:text-white mb-4">Group Training Benefits</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-gradient-to-r from-accent-500/40 to-accent-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-accent-500/20"></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Enhanced team chemistry and communication</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-gradient-to-r from-accent-500/40 to-accent-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-accent-500/20"></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Competitive environment with peer motivation</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-gradient-to-r from-accent-500/40 to-accent-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-accent-500/20"></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Cost-effective training for multiple players</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-gradient-to-r from-accent-500/40 to-accent-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-accent-500/20"></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Realistic game scenarios and match situations</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-gradient-to-r from-accent-500/40 to-accent-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-accent-500/20"></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Customized training for your team's specific needs</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="animate-slide-up" style={{animationDelay: '0.2s'}}>
+              <div className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-white/15 dark:hover:bg-white/8 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-white/10 dark:border-white/10 group">
+                <h3 className="text-2xl font-bold text-primary-900 dark:text-white mb-4">Perfect For</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-gradient-to-r from-primary-500/40 to-primary-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-primary-500/20"></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">High school and college teams</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-gradient-to-r from-primary-500/40 to-primary-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-primary-500/20"></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Club soccer teams</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-gradient-to-r from-primary-500/40 to-primary-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-primary-500/20"></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Friend groups wanting to improve together</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-gradient-to-r from-primary-500/40 to-primary-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-primary-500/20"></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Players preparing for tryouts</span>
+                  </li>
+                </ul>
+                
+                <div className="mt-8 p-4 bg-gradient-to-r from-accent-500/10 to-primary-500/10 rounded-lg border border-accent-500/20">
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    <strong>Student Focus:</strong> Whether you are in high school or college looking to enhance your skills, our group sessions provide the perfect environment for growth and development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12 animate-fade-in">
+            <a 
+              href="mailto:4sportsfoundation@gmail.com?subject=Small Group Session Inquiry&body=Hi Jonathan,%0D%0A%0D%0AI'm interested in booking a small group session for our team/group.%0D%0A%0D%0AGroup Details:%0D%0A- Number of players: %0D%0A- Age group: %0D%0A- Current skill level: %0D%0A- Specific areas of focus: %0D%0A- Preferred training times: %0D%0A%0D%0APlease let me know about availability and pricing for group sessions.%0D%0A%0D%0AThank you!" 
+              className="btn-primary text-lg px-8 py-4 group"
+            >
+              <span className="group-hover:translate-x-1 transition-transform duration-300">Book Group Session</span>
+            </a>
           </div>
         </div>
       </section>
