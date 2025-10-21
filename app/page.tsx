@@ -222,6 +222,7 @@ export default function HomePage() {
         </div>
       </section>
 
+
       {/* Achievements Section - Matches hero end color */}
       <section id="achievements" className="py-20 bg-white dark:bg-dark-900 relative">
         <div className="absolute inset-0 dark:bg-dark-900/20"></div>
@@ -361,10 +362,10 @@ export default function HomePage() {
       </section>
 
       {/* Small Group Sessions Section */}
-      <section className="py-20 bg-white dark:bg-dark-900 relative">
+      <section className="py-12 bg-white dark:bg-dark-900 relative">
         <div className="absolute inset-0 dark:bg-dark-900/20"></div>
         <div className="container-max section-padding relative z-10">
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-heading-400 dark:text-heading-500 mb-4 font-barlow italic uppercase">
               Small Group Sessions
             </h2>

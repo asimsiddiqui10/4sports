@@ -15,9 +15,12 @@ export default function BookingPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-heading-400 dark:text-heading-500 mb-4 font-barlow italic uppercase">
             Book Your Training Session
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-4">
             Select your preferred date and time for a training session with Jonathan Mensah. 
             All sessions are held at Warner Woods Park, Columbus, OH.
+          </p>
+          <p className="text-base text-heading-400 dark:text-heading-500 font-semibold">
+            Available Programs: Training • Mental • Small Group
           </p>
         </div>
 
