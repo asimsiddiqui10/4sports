@@ -98,9 +98,9 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center overflow-visible">
             <div className="animate-slide-in-left overflow-visible">
               <div className="mb-6 pl-0 pr-4 overflow-visible">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 overflow-visible">
-                  <span className="text-accent-600 dark:text-accent-300 animate-pulse-slow font-bison italic font-black uppercase tracking-tight">4SPORTS</span>
-                  <span className="block text-3xl md:text-4xl lg:text-5xl mt-2 animate-fade-in text-gray-900 dark:text-white">Elite Training</span>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 overflow-visible">
+                  <span className="text-accent-600 dark:text-accent-300 animate-pulse-slow font-bison italic font-black uppercase tracking-tight px-2">4SPORTS</span>
+                  <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 animate-fade-in text-gray-900 dark:text-white">Elite Training</span>
                 </h1>
               </div>
               <div className="mb-6 animate-fade-in" style={{animationDelay: '0.4s'}}>
@@ -114,11 +114,11 @@ export default function HomePage() {
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed italic animate-fade-in" style={{animationDelay: '0.6s'}}>
                 "Columbus... I am ready to create something special here again. I have learnt and know what it takes to play at the highest level, and I'm ready to share that skillset with this great community."
               </p>
-              <div className="flex flex-row gap-4 animate-fade-in" style={{animationDelay: '0.8s'}}>
-                <Link href="/book" className="btn-primary text-lg px-4 py-4 group flex-1 text-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-in" style={{animationDelay: '0.8s'}}>
+                <Link href="/book" className="btn-primary text-sm sm:text-lg px-3 sm:px-4 py-3 sm:py-4 group flex-1 text-center">
                   <span className="group-hover:translate-x-1 transition-transform duration-300">Start Your Journey</span>
                 </Link>
-                <Link href="#about" className="btn-secondary text-lg px-4 py-4 group flex-1 text-center">
+                <Link href="#about" className="btn-secondary text-sm sm:text-lg px-3 sm:px-4 py-3 sm:py-4 group flex-1 text-center">
                   <span className="group-hover:translate-x-1 transition-transform duration-300">Learn More</span>
                 </Link>
               </div>
@@ -151,7 +151,7 @@ export default function HomePage() {
         <div className="absolute inset-0 dark:bg-black/20"></div>
         <div className="container-max section-padding relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative animate-slide-in-left">
+            <div className="relative animate-slide-in-left order-2 lg:order-1">
               <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-xl group">
                 <Image
                   src="/052222_LAFC_002.JPEG"
@@ -162,7 +162,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-600/20 to-accent-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
-            <div className="animate-slide-in-right">
+            <div className="animate-slide-in-right order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-6">
                 Meet Jonathan Mensah
               </h2>
@@ -322,7 +322,7 @@ export default function HomePage() {
                       <Clock className="h-4 w-4 mr-2" />
                       <span className="font-semibold text-sm">{program.duration}</span>
                     </div>
-                    <div className="text-lg font-bold text-primary-900 dark:text-white bg-white/10 dark:bg-white/10 backdrop-blur-lg px-4 py-1 rounded-full border border-white/20">{program.price}</div>
+                    <div className="text-sm sm:text-lg font-bold text-primary-900 dark:text-white bg-white/10 dark:bg-white/10 backdrop-blur-lg px-2 sm:px-4 py-1 rounded-full border border-white/20">{program.price}</div>
                   </div>
                 </div>
                 
