@@ -6,13 +6,13 @@ export default function BookingPage() {
   const [isLoading, setIsLoading] = useState(true)
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#050505] relative">
-      <div className="absolute inset-0 bg-transparent dark:bg-black/20"></div>
+    <div className="min-h-screen bg-white dark:bg-dark-900 relative">
+      <div className="absolute inset-0 bg-transparent dark:bg-dark-900/20"></div>
       
       {/* Page content */}
       <div className="container-max section-padding relative z-10 py-32">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-heading-400 dark:text-heading-500 mb-4 font-barlow italic uppercase">
             Book Your Training Session
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">

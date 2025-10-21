@@ -3,14 +3,16 @@ import { Mail, Phone, MapPin } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-900 dark:bg-gradient-to-b dark:from-primary-900 dark:via-primary-950 dark:to-slate-950 text-white border-t border-primary-800 dark:border-primary-700 relative">
-      <div className="absolute inset-0 bg-black/10 dark:bg-gradient-to-b dark:from-black/40 dark:via-black/60 dark:to-black/80"></div>
+    <footer className="bg-primary-900 dark:bg-gradient-to-b dark:from-dark-900 dark:via-dark-900 dark:to-dark-950 text-white border-t border-primary-800 dark:border-primary-700 relative">
+      <div className="absolute inset-0 bg-dark-900/10 dark:bg-gradient-to-b dark:from-dark-900/40 dark:via-dark-900/60 dark:to-dark-900/80"></div>
       <div className="container-max section-padding py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="animate-fade-in">
             <h3 className="text-2xl font-bold mb-4 group">
-              <span className="text-accent-300 dark:text-accent-400 group-hover:text-accent-200 dark:group-hover:text-accent-300 transition-colors duration-300 font-bison italic font-black uppercase tracking-tighter">4SPORTS</span>{' '}
+              <span className="font-barlow italic font-black uppercase tracking-tighter">
+                <span className="text-heading-400 dark:text-white">4</span><span className="text-heading-400 dark:text-heading-500 group-hover:text-heading-500 dark:group-hover:text-heading-400 transition-colors duration-300">SPORTS</span>
+              </span>{' '}
               <span className="group-hover:text-gray-200 transition-colors duration-300">Elite Training</span>
             </h3>
             <p className="text-gray-300 dark:text-gray-400 mb-4 leading-relaxed">
@@ -72,7 +74,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 dark:border-primary-600 mt-8 pt-8 text-center text-gray-300 dark:text-gray-400 animate-fade-in" style={{animationDelay: '0.6s'}}>
           <p className="hover:text-accent-300 dark:hover:text-accent-400 transition-colors duration-300">
-            &copy; 2024 <span className="font-bison italic font-black uppercase tracking-tighter">4SPORTS</span> Elite Training. All rights reserved. Founded by Jonathan Mensah.
+            &copy; 2024 <span className="font-barlow italic font-black uppercase tracking-tighter"><span className="text-heading-400 dark:text-white">4</span><span className="text-heading-400 dark:text-heading-500">SPORTS</span></span> Elite Training. All rights reserved. Founded by Jonathan Mensah.
           </p>
         </div>
       </div>

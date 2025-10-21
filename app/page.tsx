@@ -85,70 +85,50 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#050505] transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-dark-900 transition-colors duration-300">
       {/* Hero Section - Simple gradient */}
-      <section className="relative bg-white dark:bg-gradient-to-b dark:from-black dark:via-[#030303] dark:to-[#050505] text-gray-900 dark:text-white py-24 lg:py-32 overflow-visible">
-        <div className="absolute inset-0 bg-transparent dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/20"></div>
-        {/* Animated background elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-accent-500/10 rounded-full animate-float"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 bg-accent-400/10 rounded-full animate-bounce-subtle"></div>
-        <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-primary-400/10 rounded-full animate-pulse-slow"></div>
+      {/* Hero Section - SHOTTRACKER Style */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-dark-900 pt-32">
+        {/* Dark Blue Overlay - Only in dark mode */}
+        <div className="absolute inset-0 dark:bg-dark-900/80"></div>
         
-        <div className="container-max section-padding relative z-10 overflow-visible">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center overflow-visible">
-            <div className="animate-slide-in-left overflow-visible">
-              <div className="mb-6 pl-0 pr-4 overflow-visible">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 overflow-visible">
-                  <span className="text-accent-600 dark:text-accent-300 animate-pulse-slow font-bison italic font-black uppercase tracking-tight px-2">4SPORTS</span>
-                  <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 animate-fade-in text-gray-900 dark:text-white">Elite Training</span>
-                </h1>
-              </div>
-              <div className="mb-6 animate-fade-in" style={{animationDelay: '0.4s'}}>
-                <p className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-3 leading-tight">
-                  Train with <span className="bg-gradient-to-r from-accent-600 to-accent-700 dark:from-accent-300 dark:to-accent-400 bg-clip-text text-transparent">Jonathan Mensah</span>
-                </p>
-                <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Former Columbus Crew Captain • MLS Cup Winner • Ghana International • 16+ years of professional experience
-                </p>
-              </div>
-              <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed italic animate-fade-in" style={{animationDelay: '0.6s'}}>
-                "Columbus... I am ready to create something special here again. I have learnt and know what it takes to play at the highest level, and I'm ready to share that skillset with this great community."
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-in" style={{animationDelay: '0.8s'}}>
-                <Link href="/book" className="btn-primary text-sm sm:text-lg px-3 sm:px-4 py-3 sm:py-4 group flex-1 text-center">
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">Start Your Journey</span>
-                </Link>
-                <Link href="#about" className="btn-secondary text-sm sm:text-lg px-3 sm:px-4 py-3 sm:py-4 group flex-1 text-center">
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">Learn More</span>
-                </Link>
-              </div>
-              <div className="mt-6 flex items-center text-accent-600 dark:text-accent-300 animate-fade-in" style={{animationDelay: '1s'}}>
-                <MapPin className="h-5 w-5 mr-2 animate-bounce-subtle" />
-                <span className="text-lg">Warner Woods Park, Columbus, OH</span>
-              </div>
-            </div>
-            <div className="relative animate-slide-in-right">
-              <div className="relative w-full h-96 lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl group">
-                <Image
-                  src="/071822_action_038_Original.JPEG"
-                  alt="Jonathan Mensah in action - Columbus Crew"
-                  fill
-                  className="object-cover object-center transition-all duration-700 group-hover:scale-110"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
-              {/* Floating elements around the image */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-accent-500 rounded-full animate-float opacity-80"></div>
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-primary-400 rounded-full animate-bounce-subtle opacity-60"></div>
+        {/* Hero Content */}
+        <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-tight mb-4 font-barlow italic">
+            <span className="text-heading-400 dark:text-heading-500">TRAIN WITH JONATHAN MENSAH</span>
+          </h1>
+          
+          <p className="text-sm sm:text-base text-black dark:text-gray-300 mb-8 max-w-[95%] mx-auto leading-relaxed">
+            Former Columbus Crew Captain • MLS Cup Winner • Ghana International • 16+ years of professional experience
+          </p>
+          
+          <div className="mb-8 flex flex-row gap-2 sm:gap-4 justify-center items-center">
+            <Link href="/book" className="inline-block bg-blue-500 text-white hover:border-2 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 font-barlow font-bold italic uppercase px-3 sm:px-8 py-3 sm:py-4 text-xs sm:text-base btn-tilted">
+              REQUEST A SESSION
+            </Link>
+            <Link href="#about" className="inline-block border-2 border-blue-500 text-blue-500 bg-transparent hover:bg-blue-500 hover:text-white font-barlow font-bold italic uppercase px-3 sm:px-8 py-3 sm:py-4 text-xs sm:text-base btn-tilted">
+              LEARN MORE
+            </Link>
+          </div>
+          
+          {/* Hero Photo */}
+          <div className="mt-12 max-w-4xl mx-auto">
+            <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/2021-09-29 COLUMBUS CREW VS CRUZ AZUL-207.JPG"
+                alt="Jonathan Mensah - Columbus Crew"
+                fill
+                className="object-cover object-center"
+                priority
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* About Jonathan Section - Matches hero end color */}
-      <section id="about" className="py-20 bg-white dark:bg-[#050505] relative">
-        <div className="absolute inset-0 dark:bg-black/20"></div>
+      <section id="about" className="py-20 bg-white dark:bg-dark-900 relative">
+        <div className="absolute inset-0 dark:bg-dark-900/20"></div>
         <div className="container-max section-padding relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative animate-slide-in-left order-2 lg:order-1">
@@ -163,7 +143,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="animate-slide-in-right order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-heading-400 dark:text-heading-500 mb-6 font-barlow italic uppercase">
                 Meet Jonathan Mensah
               </h2>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
@@ -176,13 +156,16 @@ export default function HomePage() {
                 and 7 African Cup of Nations tournaments, it's been nothing short of amazing by the grace of God, 
                 hard work, and perseverance.
               </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                 At this latter stage of my career, with the flexibility of time, I want to shepherd and mentor 
                 the next generation with mentorship programs, talent development, and character building. 
                 It's only fitting to give back to the community that played a role in shaping me into who I am today.
               </p>
-              <a href="mailto:4sportsfoundation@gmail.com" className="btn-primary group">
-                <span className="group-hover:translate-x-1 transition-transform duration-300">Get Started Today</span>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed italic font-bison">
+                "Columbus... I am ready to create something special here again. I have learnt and know what it takes to play at the highest level, and I'm ready to share that skillset with this great community."
+              </p>
+              <a href="mailto:4sportsfoundation@gmail.com" className="bg-blue-500 text-white hover:border-2 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 font-barlow font-bold italic uppercase px-6 py-3 btn-tilted">
+                Get Started Today
               </a>
             </div>
           </div>
@@ -190,11 +173,11 @@ export default function HomePage() {
       </section>
 
       {/* Mission Statement - Matches hero end color */}
-      <section className="py-16 bg-white dark:bg-[#050505] relative">
-        <div className="absolute inset-0 dark:bg-black/20"></div>
+      <section className="py-16 bg-white dark:bg-dark-900 relative">
+        <div className="absolute inset-0 dark:bg-dark-900/20"></div>
         <div className="container-max section-padding relative z-10">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-heading-400 dark:text-heading-500 mb-6 font-barlow italic uppercase">
               Mission Statement
             </h2>
             <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -207,8 +190,8 @@ export default function HomePage() {
       </section>
 
       {/* Infinite Photo Marquee */}
-      <section className="py-12 bg-white dark:bg-[#050505] relative overflow-hidden">
-        <div className="absolute inset-0 dark:bg-black/20"></div>
+      <section className="py-12 bg-white dark:bg-dark-900 relative overflow-hidden">
+        <div className="absolute inset-0 dark:bg-dark-900/20"></div>
         <div className="relative">
           <div className="flex animate-marquee-fast space-x-6">
             {/* First set of images */}
@@ -240,11 +223,11 @@ export default function HomePage() {
       </section>
 
       {/* Achievements Section - Matches hero end color */}
-      <section id="achievements" className="py-20 bg-white dark:bg-[#050505] relative">
-        <div className="absolute inset-0 dark:bg-black/20"></div>
+      <section id="achievements" className="py-20 bg-white dark:bg-dark-900 relative">
+        <div className="absolute inset-0 dark:bg-dark-900/20"></div>
         <div className="container-max section-padding relative z-10">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-heading-400 dark:text-heading-500 mb-4 font-barlow italic uppercase">
               Professional Achievements
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
@@ -252,13 +235,13 @@ export default function HomePage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mb-12">
             {achievements.map((achievement, index) => (
               <div key={index} className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-white/15 dark:hover:bg-white/8 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-white/10 dark:border-white/10 group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 p-4 rounded-full w-fit mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-accent-500/30">
-                  <Trophy className="h-8 w-8 text-white" />
+                <div className="border-2 border-heading-400 dark:border-heading-500 hover:border-heading-500 dark:hover:border-heading-400 p-4 rounded-full w-fit mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                  <Trophy className="h-6 w-6 sm:h-8 sm:w-8 text-heading-400 dark:text-heading-500" />
                 </div>
-                <h3 className="text-xl font-bold text-primary-900 dark:text-white mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300 text-center">{achievement.title}</h3>
+                <h3 className="text-xl font-bold text-heading-400 dark:text-heading-500 mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300 text-center">{achievement.title}</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-center leading-relaxed">{achievement.description}</p>
               </div>
             ))}
@@ -296,11 +279,11 @@ export default function HomePage() {
       </section>
 
       {/* Training Programs Section - Matches hero end color */}
-      <section id="programs" className="py-20 bg-white dark:bg-[#050505] relative">
-        <div className="absolute inset-0 dark:bg-black/20"></div>
+      <section id="programs" className="py-20 bg-white dark:bg-dark-900 relative">
+        <div className="absolute inset-0 dark:bg-dark-900/20"></div>
         <div className="container-max section-padding relative z-10">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-heading-400 dark:text-heading-500 mb-4 font-barlow italic uppercase">
               Elite Training Programs
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
@@ -315,14 +298,14 @@ export default function HomePage() {
                   <div className="bg-gradient-to-r from-primary-600/40 to-primary-700/40 backdrop-blur-lg p-3 rounded-lg w-fit mb-4 group-hover:scale-110 transition-transform duration-300 border border-white/20">
                     <Clock className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-primary-900 dark:text-white mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300">{program.title}</h3>
+                  <h3 className="text-2xl font-bold text-heading-400 dark:text-heading-500 mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300">{program.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">{program.description}</p>
                   <div className="flex items-center justify-between text-accent-600 dark:text-accent-400 mb-4">
                     <div className="flex items-center bg-white/10 dark:bg-white/10 backdrop-blur-lg px-3 py-1 rounded-full border border-white/20">
                       <Clock className="h-4 w-4 mr-2" />
                       <span className="font-semibold text-sm">{program.duration}</span>
                     </div>
-                    <div className="text-sm sm:text-lg font-bold text-primary-900 dark:text-white bg-white/10 dark:bg-white/10 backdrop-blur-lg px-2 sm:px-4 py-1 rounded-full border border-white/20">{program.price}</div>
+                    <div className="text-sm sm:text-lg font-bold text-heading-400 dark:text-heading-500 bg-white/10 dark:bg-white/10 backdrop-blur-lg px-2 sm:px-4 py-1 rounded-full border border-white/20">{program.price}</div>
                   </div>
                 </div>
                 
@@ -337,7 +320,7 @@ export default function HomePage() {
                 
                 <a 
                   href={`mailto:4sportsfoundation@gmail.com?subject=Inquiry about ${program.title}&body=Hi Jonathan,%0D%0A%0D%0AI'm interested in the ${program.title} program.%0D%0A%0D%0AProgram Details:%0D%0A- ${program.description}%0D%0A- Duration: ${program.duration}%0D%0A%0D%0AKey Features:%0D%0A${program.features.map(feature => '%0D%0A- ' + feature).join('')}%0D%0A%0D%0APlease let me know the available time slots and pricing details.%0D%0A%0D%0AThank you!`} 
-                  className="btn-primary w-full text-center group"
+                  className="bg-blue-500 text-white hover:border-2 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 font-barlow font-bold italic uppercase px-6 py-3 btn-tilted w-full text-center"
                 >
                   <span className="group-hover:translate-x-1 transition-transform duration-300">Inquire Now</span>
                 </a>
@@ -378,11 +361,11 @@ export default function HomePage() {
       </section>
 
       {/* Small Group Sessions Section */}
-      <section className="py-20 bg-white dark:bg-[#050505] relative">
-        <div className="absolute inset-0 dark:bg-black/20"></div>
+      <section className="py-20 bg-white dark:bg-dark-900 relative">
+        <div className="absolute inset-0 dark:bg-dark-900/20"></div>
         <div className="container-max section-padding relative z-10">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-heading-400 dark:text-heading-500 mb-4 font-barlow italic uppercase">
               Small Group Sessions
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
@@ -393,7 +376,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <div className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-white/15 dark:hover:bg-white/8 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-white/10 dark:border-white/10 group">
-                <h3 className="text-2xl font-bold text-primary-900 dark:text-white mb-4">Group Training Benefits</h3>
+                <h3 className="text-2xl font-bold text-heading-400 dark:text-heading-500 mb-4">Group Training Benefits</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center">
                     <div className="w-3 h-3 bg-gradient-to-r from-accent-500/40 to-accent-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-accent-500/20"></div>
@@ -421,7 +404,7 @@ export default function HomePage() {
             
             <div className="animate-slide-up" style={{animationDelay: '0.2s'}}>
               <div className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-white/15 dark:hover:bg-white/8 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-white/10 dark:border-white/10 group">
-                <h3 className="text-2xl font-bold text-primary-900 dark:text-white mb-4">Perfect For</h3>
+                <h3 className="text-2xl font-bold text-heading-400 dark:text-heading-500 mb-4">Perfect For</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center">
                     <div className="w-3 h-3 bg-gradient-to-r from-primary-500/40 to-primary-600/40 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300 border border-primary-500/20"></div>
@@ -453,7 +436,7 @@ export default function HomePage() {
           <div className="text-center mt-12 animate-fade-in">
             <a 
               href="mailto:4sportsfoundation@gmail.com?subject=Small Group Session Inquiry&body=Hi Jonathan,%0D%0A%0D%0AI'm interested in booking a small group session for our team/group.%0D%0A%0D%0AGroup Details:%0D%0A- Number of players: %0D%0A- Age group: %0D%0A- Current skill level: %0D%0A- Specific areas of focus: %0D%0A- Preferred training times: %0D%0A%0D%0APlease let me know about availability and pricing for group sessions.%0D%0A%0D%0AThank you!" 
-              className="btn-primary text-lg px-8 py-4 group"
+              className="bg-blue-500 text-white hover:border-2 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 font-barlow font-bold italic uppercase px-8 py-4 btn-tilted"
             >
               <span className="group-hover:translate-x-1 transition-transform duration-300">Book Group Session</span>
             </a>
@@ -462,8 +445,8 @@ export default function HomePage() {
       </section>
 
       {/* Call to Action Section - Special gradient like hero */}
-      <section className="py-20 bg-white dark:bg-gradient-to-b dark:from-black dark:via-[#030303] dark:to-[#050505] text-gray-900 dark:text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-transparent dark:bg-gradient-to-b dark:from-black/70 dark:via-black/50 dark:to-black/20"></div>
+      <section className="py-20 bg-white dark:bg-dark-900 text-gray-900 dark:text-white relative overflow-hidden">
+        <div className="absolute inset-0 dark:bg-dark-900/20"></div>
         {/* Animated background elements */}
         <div className="absolute top-10 right-10 w-24 h-24 bg-accent-500/10 rounded-full animate-float"></div>
         <div className="absolute bottom-20 left-20 w-16 h-16 bg-primary-400/10 rounded-full animate-bounce-subtle"></div>
@@ -471,7 +454,7 @@ export default function HomePage() {
         <div className="container-max section-padding relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-900 dark:text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-heading-400 dark:text-heading-500 font-barlow italic uppercase">
                 Ready to Pursue Excellence?
               </h2>
               <p className="text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
@@ -511,18 +494,18 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section - Matches hero end color */}
-      <section id="contact" className="py-16 bg-white dark:bg-[#050505] relative">
-        <div className="absolute inset-0 dark:bg-black/20"></div>
+      <section id="contact" className="py-16 bg-white dark:bg-dark-900 relative">
+        <div className="absolute inset-0 dark:bg-dark-900/20"></div>
         <div className="container-max section-padding text-center animate-fade-in relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-heading-400 dark:text-heading-500 mb-6 font-barlow italic uppercase">
             Start Your Elite Training Journey
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto">
             Small groups and private training sessions available. 
             Contact us today to begin your transformation.
           </p>
-          <a href="mailto:4sportsfoundation@gmail.com" className="btn-primary text-lg px-8 py-4 group">
-            <span className="group-hover:translate-x-1 transition-transform duration-300">Send Inquiry</span>
+          <a href="mailto:4sportsfoundation@gmail.com" className="bg-blue-500 text-white hover:border-2 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 font-barlow font-bold italic uppercase px-8 py-4 btn-tilted">
+            Send Inquiry
           </a>
         </div>
       </section>

@@ -29,13 +29,15 @@ export default function Header() {
   return (
     <header className={`fixed top-4 left-4 right-4 z-50 transition-all duration-500 ${
       isScrolled 
-        ? 'backdrop-blur-2xl bg-white/30 dark:bg-black/30 shadow-2xl shadow-black/10 dark:shadow-black/30' 
-        : 'backdrop-blur-xl bg-white/20 dark:bg-black/20 shadow-lg shadow-black/5 dark:shadow-black/20'
+        ? 'backdrop-blur-2xl bg-white/30 dark:bg-dark-900/30 shadow-2xl shadow-black/10 dark:shadow-black/30' 
+        : 'backdrop-blur-xl bg-white/20 dark:bg-dark-900/20 shadow-lg shadow-black/5 dark:shadow-black/20'
     } rounded-2xl border border-gray-300/50 dark:border-white/20`}>
       <div className="container-max section-padding">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-2xl font-bold text-gray-800 dark:text-white drop-shadow-sm transition-colors duration-300 group">
-            <span className="text-accent-600 dark:text-accent-300 group-hover:text-accent-700 dark:group-hover:text-accent-200 transition-colors duration-300 font-bison italic font-black uppercase tracking-tighter">4SPORTS</span>
+          <Link href="/" className="text-3xl font-bold text-gray-800 dark:text-white drop-shadow-sm transition-colors duration-300 group">
+            <span className="font-barlow italic font-black uppercase tracking-tighter">
+              <span className="text-heading-400 dark:text-white">4</span><span className="text-heading-400 dark:text-heading-500 group-hover:text-heading-500 dark:group-hover:text-heading-400 transition-colors duration-300">SPORTS</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,7 +56,7 @@ export default function Header() {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent-500/30"
+              className="p-2 rounded-full text-gray-700 dark:text-white hover:text-brand-500 transition-all duration-300 hover:scale-110"
               aria-label="Toggle theme"
             >
               {theme === 'light' ? (
@@ -66,7 +68,7 @@ export default function Header() {
             
             <Link 
               href="/book" 
-              className="btn-primary"
+              className="bg-blue-500 text-white hover:border-2 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 font-barlow font-bold italic uppercase px-6 py-2 btn-tilted"
             >
               Book Training
             </Link>
@@ -77,7 +79,7 @@ export default function Header() {
             {/* Mobile Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white transition-all duration-300 hover:scale-110"
+              className="p-2 rounded-full text-gray-700 dark:text-white hover:text-brand-500 transition-all duration-300 hover:scale-110"
               aria-label="Toggle theme"
             >
               {theme === 'light' ? (
@@ -115,9 +117,9 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                href="/book"
-                className="bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl text-center mt-4 hover:scale-105"
+              <Link 
+                href="/book" 
+                className="bg-blue-500 text-white hover:border-2 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 font-barlow font-bold italic uppercase px-6 py-3 btn-tilted text-center mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Book Training
