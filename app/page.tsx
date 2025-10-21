@@ -106,8 +106,8 @@ export default function HomePage() {
             <Link href="/book" className="inline-block bg-blue-500 text-white hover:border-2 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 font-barlow font-bold italic uppercase px-3 sm:px-8 py-3 sm:py-4 text-xs sm:text-base btn-tilted">
               REQUEST A SESSION
             </Link>
-            <Link href="#about" className="inline-block border-2 border-blue-500 text-blue-500 bg-transparent hover:bg-blue-500 hover:text-white font-barlow font-bold italic uppercase px-3 sm:px-8 py-3 sm:py-4 text-xs sm:text-base btn-tilted">
-              LEARN MORE
+            <Link href="#programs" className="inline-block border-2 border-blue-500 text-blue-500 bg-transparent hover:bg-blue-500 hover:text-white font-barlow font-bold italic uppercase px-3 sm:px-8 py-3 sm:py-4 text-xs sm:text-base btn-tilted">
+              Training Programs
             </Link>
           </div>
           
