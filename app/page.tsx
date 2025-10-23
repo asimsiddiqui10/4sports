@@ -223,61 +223,6 @@ export default function HomePage() {
       </section>
 
 
-      {/* Achievements Section - Matches hero end color */}
-      <section id="achievements" className="py-20 bg-white dark:bg-dark-900 relative">
-        <div className="absolute inset-0 dark:bg-dark-900/20"></div>
-        <div className="container-max section-padding relative z-10">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-heading-400 dark:text-heading-500 mb-4 font-barlow italic uppercase">
-              Professional Achievements
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              A career spanning continents and competitions at the highest level
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mb-12">
-            {achievements.map((achievement, index) => (
-              <div key={index} className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-white/15 dark:hover:bg-white/8 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-white/10 dark:border-white/10 group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="border-2 border-heading-400 dark:border-heading-500 hover:border-heading-500 dark:hover:border-heading-400 p-4 rounded-full w-fit mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-                  <Trophy className="h-6 w-6 sm:h-8 sm:w-8 text-heading-400 dark:text-heading-500" />
-                </div>
-                <h3 className="text-xl font-bold text-heading-400 dark:text-heading-500 mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300 text-center">{achievement.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-center leading-relaxed">{achievement.description}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-fade-in">
-            <div className="relative h-64 lg:h-80 rounded-2xl overflow-hidden shadow-xl group">
-              <Image
-                src="/2021-09-29 COLUMBUS CREW VS CRUZ AZUL-207.JPG"
-                alt="Jonathan Mensah - MLS Cup Victory"
-                fill
-                className="object-cover object-center transition-all duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                <h3 className="font-bold text-lg">MLS Cup Victory</h3>
-                <p className="text-sm">Columbus Crew Champion</p>
-              </div>
-            </div>
-            <div className="relative h-64 lg:h-80 rounded-2xl overflow-hidden shadow-xl group">
-              <Image
-                src="/IMG_2770.JPEG"
-                alt="Jonathan Mensah - Ghana National Team"
-                fill
-                className="object-cover object-[center_30%] transition-all duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                <h3 className="font-bold text-lg">Ghana National Team</h3>
-                <p className="text-sm">70 International Caps</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Training Programs Section - Matches hero end color */}
       <section id="programs" className="py-20 bg-white dark:bg-dark-900 relative">
@@ -441,6 +386,62 @@ export default function HomePage() {
             >
               <span className="group-hover:translate-x-1 transition-transform duration-300">Book Group Session</span>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements Section - Matches hero end color */}
+      <section id="achievements" className="py-20 bg-white dark:bg-dark-900 relative">
+        <div className="absolute inset-0 dark:bg-dark-900/20"></div>
+        <div className="container-max section-padding relative z-10">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-heading-400 dark:text-heading-500 mb-4 font-barlow italic uppercase">
+              Professional Achievements
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              A career spanning continents and competitions at the highest level
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mb-12">
+            {achievements.map((achievement, index) => (
+              <div key={index} className="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-white/15 dark:hover:bg-white/8 transition-all duration-500 transform hover:-translate-y-2 hover:scale-102 border border-white/10 dark:border-white/10 group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="border-2 border-heading-400 dark:border-heading-500 hover:border-heading-500 dark:hover:border-heading-400 p-4 rounded-full w-fit mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                  <Trophy className="h-6 w-6 sm:h-8 sm:w-8 text-heading-400 dark:text-heading-500" />
+                </div>
+                <h3 className="text-xl font-bold text-heading-400 dark:text-heading-500 mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300 text-center">{achievement.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-center leading-relaxed">{achievement.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-fade-in">
+            <div className="relative h-64 lg:h-80 rounded-2xl overflow-hidden shadow-xl group">
+              <Image
+                src="/2021-09-29 COLUMBUS CREW VS CRUZ AZUL-207.JPG"
+                alt="Jonathan Mensah - MLS Cup Victory"
+                fill
+                className="object-cover object-center transition-all duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                <h3 className="font-bold text-lg">MLS Cup Victory</h3>
+                <p className="text-sm">Columbus Crew Champion</p>
+              </div>
+            </div>
+            <div className="relative h-64 lg:h-80 rounded-2xl overflow-hidden shadow-xl group">
+              <Image
+                src="/IMG_2770.JPEG"
+                alt="Jonathan Mensah - Ghana National Team"
+                fill
+                className="object-cover object-[center_30%] transition-all duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                <h3 className="font-bold text-lg">Ghana National Team</h3>
+                <p className="text-sm">70 International Caps</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
