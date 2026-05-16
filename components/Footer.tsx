@@ -38,7 +38,7 @@ export default function Footer() {
               <div className="flex items-center group">
                 <MapPin className="h-5 w-5 mr-3 text-accent-400 dark:text-accent-300 group-hover:scale-110 group-hover:bounce transition-all duration-300" />
                 <span className="text-gray-300 dark:text-gray-400 group-hover:translate-x-1 transition-transform duration-300">
-                  Warner Woods Park<br />Columbus, OH
+                  3599 Chiller Lane<br />Columbus, OH 43219
                 </span>
               </div>
             </div>

@@ -6,8 +6,8 @@ import { ThemeProvider } from '@/lib/ThemeContext'
 
 export const metadata: Metadata = {
   title: '4 Sports Elite Training - Jonathan Mensah | Professional Soccer Training Columbus',
-  description: 'Elite soccer training with former Columbus Crew Captain Jonathan Mensah. 16+ years professional experience, MLS Cup winner, Ghana international. Located at Warner Woods Park, Columbus, OH.',
-  keywords: 'Jonathan Mensah, Columbus Crew, 4 Sports, elite soccer training, professional soccer coaching, Columbus soccer, Ghana national team, MLS Cup winner, Warner Woods Park',
+  description: 'Elite soccer training with former Columbus Crew Captain Jonathan Mensah. 16+ years professional experience, MLS Cup winner, Ghana international. Located at 3599 Chiller Lane, Columbus, OH 43219.',
+  keywords: 'Jonathan Mensah, Columbus Crew, 4 Sports, elite soccer training, professional soccer coaching, Columbus soccer, Ghana national team, MLS Cup winner, 3599 Chiller Lane Columbus',
   authors: [{ name: '4 Sports Elite Training' }],
   openGraph: {
     title: '4 Sports Elite Training - Jonathan Mensah | Professional Soccer Training Columbus',

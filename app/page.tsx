@@ -475,7 +475,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center group">
                   <MapPin className="h-6 w-6 text-accent-600 dark:text-accent-400 mr-3 group-hover:scale-110 group-hover:bounce transition-all duration-300" />
-                  <span className="text-gray-700 dark:text-gray-300 group-hover:translate-x-2 transition-transform duration-300">Warner Woods Park, Columbus, OH</span>
+                  <span className="text-gray-700 dark:text-gray-300 group-hover:translate-x-2 transition-transform duration-300">3599 Chiller Lane, Columbus, OH 43219</span>
                 </div>
               </div>
             </div>

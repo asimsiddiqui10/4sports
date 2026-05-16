@@ -17,7 +17,7 @@ export default function BookingPage() {
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-4">
             Select your preferred date and time for a training session with Jonathan Mensah. 
-            All sessions are held at Warner Woods Park, Columbus, OH.
+            All sessions are held at 3599 Chiller Lane, Columbus, OH 43219.
           </p>
           <p className="text-base text-heading-400 dark:text-heading-500 font-semibold">
             Available Programs: Training • Mental • Small Group
@@ -53,7 +53,7 @@ export default function BookingPage() {
           
           <div className="bg-gray-50 dark:bg-white/5 backdrop-blur-xl p-6 rounded-xl border border-gray-100 dark:border-white/10">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Location</h3>
-            <p className="text-gray-600 dark:text-gray-300">All sessions take place at Warner Woods Park, Columbus, OH. Directions will be sent with confirmation.</p>
+            <p className="text-gray-600 dark:text-gray-300">All sessions take place at 3599 Chiller Lane, Columbus, OH 43219. Directions will be sent with confirmation.</p>
           </div>
           
           <div className="bg-gray-50 dark:bg-white/5 backdrop-blur-xl p-6 rounded-xl border border-gray-100 dark:border-white/10">
